@@ -29,5 +29,11 @@ namespace Assignment1.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<Assignment1.Models.Person> People { get; set; }
+
+        public System.Data.Entity.DbSet<Assignment1.Models.Car> Cars { get; set; }
+
+        public System.Data.Entity.DbSet<Assignment1.Models.House> Houses { get; set; }
     }
 }
